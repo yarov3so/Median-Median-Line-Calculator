@@ -42,8 +42,7 @@ while True:
     if len(entries[i])==0:
         st.stop()
     if "," not in entries[i]:
-        st.markdown("Your point must be made up of two coordinates!")
-        st.stop()
+        break
     try:
         datapts.loc[len(datapts)]=comprehend(entries[i])
     except:
