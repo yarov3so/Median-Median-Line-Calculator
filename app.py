@@ -54,8 +54,10 @@ if len(datapts)==0 or (i==0 and "," not in entries[0]) or (i==0 and entries[0] =
     st.markdown("You have entered no data points!")
     st.stop()
 
+datapts=datapts.drop_duplicates()
+
 if len(datapts)<3:
-    st.markdown("You need at least three points (ideally many more) to apply the Median-Median line method!")
+    st.markdown("You need at least three distinct points (ideally many more) to apply the Median-Median line method!")
     st.stop()
 
 datapts=datapts.sort_values(by="x")
