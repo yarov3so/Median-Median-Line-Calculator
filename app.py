@@ -111,7 +111,7 @@ st.markdown(f"$ {try_int(P[1])} = {try_int(m)} \cdot ( {try_int(P[0])} ) + b $ &
 st.markdown(f"$ b = {try_int(P[1])} - {try_int(m)}*{try_int(P[0])}= {b} $")
 
 st.markdown(f"And so, the Median-Median method produces the following line of best fit in slope-intercept form:")
-if try_int{b}>0:
+if try_int(b)>0:
     st.markdown(f"$y = {try_int(m)}x + {try_int(b)}$"
 if try_int(b)==0:
     st.markdown(f"$y = {try_int(m)}x$"
