@@ -41,9 +41,9 @@ while True:
     entries[i]=st.text_input("Enter a pair of coordinates separated by a comma, or write 'done' if you are done: ",key=i)
     if len(entries[i])==0:
         st.stop()
-        break
     if "," not in entries[i]:
-        break
+        st.markdown("Your point must be made up of two coordinates!")
+        st.stop()
     try:
         datapts.loc[len(datapts)]=comprehend(entries[i])
     except:
