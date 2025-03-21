@@ -89,9 +89,9 @@ M3=(stat.median(G3["x"]),stat.median(G3["y"]))
 
 st.markdown("As such, we have:")
 
-st.markdown(f"""$M1 = {(try_int(M1[0]),try_int(M1[1])}$  
-$M2 = {(try_int(M2[0]),try_int(M2[1])}$  
-$M3 = {(try_int(M3[0]),try_int(M3[1])}$""")
+st.markdown(f"""$M1 = {(try_int(M1[0]),try_int(M1[1]))}$  
+$M2 = {(try_int(M2[0]),try_int(M2[1]))}$  
+$M3 = {(try_int(M3[0]),try_int(M3[1]))}$""")
 
 P=((M1[0]+M2[0]+M3[0])/3,(M1[1]+M2[1]+M3[1])/3)
 
