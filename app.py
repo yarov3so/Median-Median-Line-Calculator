@@ -106,7 +106,7 @@ st.markdown(f"$ \\text{{Slope}} = \\frac{{ M3_y - M1_y }}{{ M3_x - M1_x }} = \\f
 st.markdown(f"\nWe calculate the y-intercept b by focing the line with slope {try_int(m)} to pass through the point P:")
 st.markdown(f"$y = mx + b$")
 st.markdown(f"$y = {try_int(m)}(x) + b$")
-st.markdown(f"$ {try_int(P[1])} = {try_int(m)} \cdot ( {try_int(P[0])} ) + b $ &nbsp;  $\Larrow$  plugging the coordinates of P into the slope-intercept form of the line of best fit.")
+st.markdown(f"$ {try_int(P[1])} = {try_int(m)} \cdot ( {try_int(P[0])} ) + b $ &nbsp;  $\larrow$  plugging the coordinates of P into the slope-intercept form of the line of best fit.")
 st.markdown(f"$ b = {try_int(P[1])} - ({try_int(m)}) \cdot ({try_int(P[0])}) = {b} $")
 
 st.markdown(f"And so, the Median-Median method produces the following line of best fit in slope-intercept form:")
