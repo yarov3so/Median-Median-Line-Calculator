@@ -25,8 +25,10 @@ def try_int(num):
         None
     if num==num_int:
         return num_int
-    else:
+    elif num>=0:
         return round(float(num),2)
+    else:
+        return "{:.2g}".format(float(num))
     
 datapts=pd.DataFrame(columns=['x', 'y'])
 current_entry={0}
