@@ -4,6 +4,11 @@ import re
 import statistics as stat
 import streamlit as st
 
+st.set_page_config(
+    page_title="Median-Median Line Calculator",
+    page_icon="MHT.png", 
+)
+
 def comprehend(mystring):
     mystring=mystring.replace(" ", "")
     data_list=mystring.split(",")
