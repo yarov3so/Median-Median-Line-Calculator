@@ -54,7 +54,7 @@ while True:
     i+=1
 
 if len(datapts)==0 or (i==0 and "," not in entries[0]) or (i==0 and entries[0] == ",") :
-    st.mwarning("You have entered no data points!")
+    st.warning("You have entered no data points!")
     st.stop()
 
 datapts=datapts.drop_duplicates()
