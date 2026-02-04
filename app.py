@@ -112,7 +112,7 @@ m=(M3[1]-M1[1])/(M3[0]-M1[0])
 b=P[1]-m*P[0]
 
 st.markdown("We use $M1$ and $M3$ to find the slope of the line of best fit:")
-st.markdown(f"$ \\text{{Slope}} = \\frac{{ M3_y - M1_y }}{{ M3_x - M1_x }} = \\frac{{ {try_int(M3[1])} - {try_int(M1[1])} }}{{ {try_int(M3[0])} - {try_int(M1[0])} }} = {try_int(m)}$")
+st.markdown(f"$$ \\text{{Slope}} = \\frac{{ M3_y - M1_y }}{{ M3_x - M1_x }} = \\frac{{ {try_int(M3[1])} - {try_int(M1[1])} }}{{ {try_int(M3[0])} - {try_int(M1[0])} }} = {try_int(m)}$$")
 
 st.markdown(f"We calculate the $y$-intercept $b$ by focing the line with slope ${try_int(m)}$ to pass through the point $P$ :")    
 st.markdown(f"""$y = mx + b$    
