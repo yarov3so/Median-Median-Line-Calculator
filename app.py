@@ -106,7 +106,7 @@ $M3 = {(try_int(M3[0]),try_int(M3[1]))}$""")
 P=((M1[0]+M2[0]+M3[0])/3,(M1[1]+M2[1]+M3[1])/3)
 
 st.markdown("Therefore:")
-st.markdown(f"$ P = \\left( \\frac{{ M1_x + M2_x + M3_x }}{{ 3 }}) , \\frac{{ M1_y + M2_y + M3_y }}{{ 3 }} \\right) = \\left( \\frac{{ {try_int(M1[0])} + {try_int(M2[0])} + {try_int(M3[0])} }}{{ 3 }} , \\frac{{ {try_int(M1[1])} + {try_int(M2[1])} + {try_int(M3[1])} }}{{ 3 }} \\right) = {(try_int(P[0]),try_int(P[1]))} $")
+st.markdown(f"$$ P = \\left( \\frac{{ M1_x + M2_x + M3_x }}{{ 3 }}) , \\frac{{ M1_y + M2_y + M3_y }}{{ 3 }} \\right) = \\left( \\frac{{ {try_int(M1[0])} + {try_int(M2[0])} + {try_int(M3[0])} }}{{ 3 }} , \\frac{{ {try_int(M1[1])} + {try_int(M2[1])} + {try_int(M3[1])} }}{{ 3 }} \\right) = {(try_int(P[0]),try_int(P[1]))} $$")
 
 m=(M3[1]-M1[1])/(M3[0]-M1[0])
 b=P[1]-m*P[0]
